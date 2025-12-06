@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Leaf } from "lucide-react";
 
 export const Footer = () => {
@@ -8,34 +9,34 @@ export const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo */}
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-full bg-golden flex items-center justify-center">
-              <Leaf className="w-5 h-5 text-forest-dark" />
+          <Link to="/" className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center">
+              <Leaf className="w-5 h-5 text-primary" />
             </div>
             <div>
-              <span className="text-xl font-heading font-bold text-cream">CROPZY</span>
-              <p className="text-cream/60 text-sm">Anivek Greenfarms Pvt. Ltd.</p>
+              <span className="text-xl font-heading font-bold text-white">CROPZY</span>
+              <p className="text-white/60 text-sm">Anivek Greenfarms Pvt. Ltd.</p>
             </div>
-          </div>
+          </Link>
 
           {/* Nav Links */}
           <nav className="flex flex-wrap items-center justify-center gap-6">
-            <a href="#home" className="text-cream/70 hover:text-cream transition-colors text-sm">
+            <Link to="/" className="text-white/70 hover:text-white transition-colors text-sm">
               Home
-            </a>
-            <a href="#services" className="text-cream/70 hover:text-cream transition-colors text-sm">
+            </Link>
+            <Link to="/services" className="text-white/70 hover:text-white transition-colors text-sm">
               Services
-            </a>
-            <a href="#products" className="text-cream/70 hover:text-cream transition-colors text-sm">
+            </Link>
+            <Link to="/products" className="text-white/70 hover:text-white transition-colors text-sm">
               Products
-            </a>
-            <a href="#contact" className="text-cream/70 hover:text-cream transition-colors text-sm">
+            </Link>
+            <Link to="/contact" className="text-white/70 hover:text-white transition-colors text-sm">
               Contact
-            </a>
+            </Link>
           </nav>
 
           {/* Copyright */}
-          <p className="text-cream/50 text-sm">
+          <p className="text-white/50 text-sm">
             © {currentYear} CROPZY. All rights reserved.
           </p>
         </div>
