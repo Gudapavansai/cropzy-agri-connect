@@ -57,7 +57,7 @@ const sellerServices = [
 
 export const ServicesSection = () => {
   return (
-    <section id="services" className="py-24 bg-gradient-cream">
+    <section id="services" className="py-24 bg-secondary">
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -78,17 +78,17 @@ export const ServicesSection = () => {
           <div>
             <div className="flex items-center gap-3 mb-8">
               <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center">
-                <span className="text-xl font-bold text-primary-foreground">B</span>
+                <span className="text-xl font-bold text-white">B</span>
               </div>
               <h3 className="text-2xl font-heading font-bold text-foreground">For Buyers</h3>
             </div>
             <div className="space-y-6">
-              {buyerServices.map((service, index) => (
+              {buyerServices.map((service) => (
                 <div
                   key={service.title}
                   className="group flex gap-4 p-6 bg-card rounded-xl border border-border hover:shadow-soft hover:border-primary/20 transition-all duration-300"
                 >
-                  <div className="flex-shrink-0 w-12 h-12 bg-secondary rounded-lg flex items-center justify-center group-hover:bg-primary/10 transition-colors duration-300">
+                  <div className="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-300">
                     <service.icon className="w-6 h-6 text-primary" />
                   </div>
                   <div>
@@ -103,19 +103,19 @@ export const ServicesSection = () => {
           {/* Sellers Section */}
           <div>
             <div className="flex items-center gap-3 mb-8">
-              <div className="w-12 h-12 bg-golden rounded-xl flex items-center justify-center">
-                <span className="text-xl font-bold text-forest-dark">S</span>
+              <div className="w-12 h-12 bg-forest-light rounded-xl flex items-center justify-center">
+                <span className="text-xl font-bold text-white">S</span>
               </div>
               <h3 className="text-2xl font-heading font-bold text-foreground">For Sellers</h3>
             </div>
             <div className="space-y-6">
-              {sellerServices.map((service, index) => (
+              {sellerServices.map((service) => (
                 <div
                   key={service.title}
-                  className="group flex gap-4 p-6 bg-card rounded-xl border border-border hover:shadow-soft hover:border-golden/30 transition-all duration-300"
+                  className="group flex gap-4 p-6 bg-card rounded-xl border border-border hover:shadow-soft hover:border-forest-light/30 transition-all duration-300"
                 >
-                  <div className="flex-shrink-0 w-12 h-12 bg-secondary rounded-lg flex items-center justify-center group-hover:bg-golden/10 transition-colors duration-300">
-                    <service.icon className="w-6 h-6 text-golden-dark" />
+                  <div className="flex-shrink-0 w-12 h-12 bg-forest-light/10 rounded-lg flex items-center justify-center group-hover:bg-forest-light/20 transition-colors duration-300">
+                    <service.icon className="w-6 h-6 text-forest-light" />
                   </div>
                   <div>
                     <h4 className="text-lg font-semibold text-foreground mb-2">{service.title}</h4>
