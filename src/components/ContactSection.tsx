@@ -1,20 +1,20 @@
 import { Button } from "@/components/ui/button";
-import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { Mail, Phone, MapPin, Send, Leaf } from "lucide-react";
 
 export const ContactSection = () => {
   return (
-    <section id="contact" className="py-24 bg-primary">
+    <section id="contact" className="py-24 bg-gradient-forest">
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Left Side - Info */}
-          <div className="text-white">
-            <span className="inline-block px-4 py-1.5 bg-white/10 border border-white/20 rounded-full text-sm font-medium mb-6">
+          <div className="text-cream">
+            <span className="inline-block px-4 py-1.5 bg-cream/10 border border-cream/20 rounded-full text-sm font-medium mb-6">
               Get in Touch
             </span>
             <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6">
               Ready to Partner with Us?
             </h2>
-            <p className="text-xl text-white/80 leading-relaxed mb-10">
+            <p className="text-xl text-cream/80 leading-relaxed mb-10">
               Whether you are looking to source premium agricultural produce or seeking 
               reliable market access for your farm products, we are here to help.
             </p>
@@ -23,37 +23,37 @@ export const ContactSection = () => {
             <div className="space-y-6">
               <a
                 href="mailto:connect@cropzy.co.in"
-                className="flex items-center gap-4 p-4 bg-white/5 rounded-xl border border-white/10 hover:bg-white/10 transition-colors group"
+                className="flex items-center gap-4 p-4 bg-cream/5 rounded-xl border border-cream/10 hover:bg-cream/10 transition-colors group"
               >
-                <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center group-hover:bg-white/30 transition-colors">
-                  <Mail className="w-5 h-5 text-white" />
+                <div className="w-12 h-12 bg-golden/20 rounded-lg flex items-center justify-center group-hover:bg-golden/30 transition-colors">
+                  <Mail className="w-5 h-5 text-golden" />
                 </div>
                 <div>
-                  <p className="text-white/60 text-sm">Email Us</p>
-                  <p className="text-white font-medium">connect@cropzy.co.in</p>
+                  <p className="text-cream/60 text-sm">Email Us</p>
+                  <p className="text-cream font-medium">connect@cropzy.co.in</p>
                 </div>
               </a>
 
               <a
                 href="tel:+917702498841"
-                className="flex items-center gap-4 p-4 bg-white/5 rounded-xl border border-white/10 hover:bg-white/10 transition-colors group"
+                className="flex items-center gap-4 p-4 bg-cream/5 rounded-xl border border-cream/10 hover:bg-cream/10 transition-colors group"
               >
-                <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center group-hover:bg-white/30 transition-colors">
-                  <Phone className="w-5 h-5 text-white" />
+                <div className="w-12 h-12 bg-golden/20 rounded-lg flex items-center justify-center group-hover:bg-golden/30 transition-colors">
+                  <Phone className="w-5 h-5 text-golden" />
                 </div>
                 <div>
-                  <p className="text-white/60 text-sm">Call Us</p>
-                  <p className="text-white font-medium">+91 7702498841</p>
+                  <p className="text-cream/60 text-sm">Call Us</p>
+                  <p className="text-cream font-medium">+91 7702498841</p>
                 </div>
               </a>
 
-              <div className="flex items-start gap-4 p-4 bg-white/5 rounded-xl border border-white/10">
-                <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <MapPin className="w-5 h-5 text-white" />
+              <div className="flex items-start gap-4 p-4 bg-cream/5 rounded-xl border border-cream/10">
+                <div className="w-12 h-12 bg-golden/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <MapPin className="w-5 h-5 text-golden" />
                 </div>
                 <div>
-                  <p className="text-white/60 text-sm">Visit Us</p>
-                  <p className="text-white font-medium leading-relaxed">
+                  <p className="text-cream/60 text-sm">Visit Us</p>
+                  <p className="text-cream font-medium leading-relaxed">
                     Anivek Greenfarms Private Limited<br />
                     Co Karma, 2nd Floor, Plot No 5, Survey No 62,<br />
                     Inorbit Mall Road, Hitech City,<br />
@@ -65,7 +65,7 @@ export const ContactSection = () => {
           </div>
 
           {/* Right Side - Form */}
-          <div className="bg-white rounded-2xl p-8 shadow-elevated">
+          <div className="bg-cream rounded-2xl p-8 shadow-elevated">
             <h3 className="text-2xl font-heading font-bold text-foreground mb-6">
               Send Us a Message
             </h3>
@@ -140,9 +140,9 @@ export const ContactSection = () => {
                 />
               </div>
 
-              <Button type="submit" className="w-full" size="lg">
+              <Button type="submit" variant="golden" className="w-full" size="lg">
                 Send Message
-                <Send className="w-5 h-5 ml-2" />
+                <Send className="w-5 h-5" />
               </Button>
             </form>
           </div>

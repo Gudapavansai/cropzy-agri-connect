@@ -24,8 +24,8 @@ export const AboutSection = () => {
         <div className="grid md:grid-cols-2 gap-8 mb-16">
           {/* Mission Card */}
           <div className="group p-8 bg-card rounded-2xl border border-border hover:shadow-elevated transition-all duration-500 animate-fade-up animation-delay-300">
-            <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors duration-300">
-              <Target className="w-7 h-7 text-primary" />
+            <div className="w-14 h-14 bg-golden/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-golden/20 transition-colors duration-300">
+              <Target className="w-7 h-7 text-golden" />
             </div>
             <h3 className="text-2xl font-heading font-bold text-foreground mb-4">
               Our Mission
@@ -62,8 +62,8 @@ export const AboutSection = () => {
           
           <div className="flex flex-col md:flex-row items-center justify-center gap-12">
             <div className="text-center group">
-              <div className="w-24 h-24 bg-primary rounded-full flex items-center justify-center mb-4 mx-auto group-hover:scale-110 transition-transform duration-300">
-                <span className="text-2xl font-heading font-bold text-white">PV</span>
+              <div className="w-24 h-24 bg-gradient-to-br from-forest to-forest-light rounded-full flex items-center justify-center mb-4 mx-auto group-hover:scale-110 transition-transform duration-300">
+                <span className="text-2xl font-heading font-bold text-cream">PV</span>
               </div>
               <h4 className="text-lg font-heading font-bold text-foreground">
                 Patlolla Vivekananda Reddy
@@ -72,8 +72,8 @@ export const AboutSection = () => {
             </div>
             
             <div className="text-center group">
-              <div className="w-24 h-24 bg-forest-light rounded-full flex items-center justify-center mb-4 mx-auto group-hover:scale-110 transition-transform duration-300">
-                <span className="text-2xl font-heading font-bold text-white">PA</span>
+              <div className="w-24 h-24 bg-gradient-to-br from-golden to-golden-dark rounded-full flex items-center justify-center mb-4 mx-auto group-hover:scale-110 transition-transform duration-300">
+                <span className="text-2xl font-heading font-bold text-forest-dark">PA</span>
               </div>
               <h4 className="text-lg font-heading font-bold text-foreground">
                 Pendyala Anil Kumar

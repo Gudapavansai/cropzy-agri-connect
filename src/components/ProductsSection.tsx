@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, ChevronDown, ChevronUp } from "lucide-react";
 
@@ -90,7 +89,7 @@ export const ProductsSection = () => {
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <span className="inline-block px-4 py-1.5 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">
+          <span className="inline-block px-4 py-1.5 bg-golden/10 text-golden-dark rounded-full text-sm font-medium mb-4">
             Our Products
           </span>
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-foreground mb-6">
@@ -116,8 +115,8 @@ export const ProductsSection = () => {
                   alt={category.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent" />
-                <h3 className="absolute bottom-4 left-4 text-xl font-heading font-bold text-white">
+                <div className="absolute inset-0 bg-gradient-to-t from-forest/60 to-transparent" />
+                <h3 className="absolute bottom-4 left-4 text-xl font-heading font-bold text-cream">
                   {category.title}
                 </h3>
               </div>
@@ -145,7 +144,7 @@ export const ProductsSection = () => {
                         key={item}
                         className="flex items-start gap-2 text-sm text-muted-foreground"
                       >
-                        <span className="w-1.5 h-1.5 rounded-full bg-primary mt-1.5 flex-shrink-0" />
+                        <span className="w-1.5 h-1.5 rounded-full bg-golden mt-1.5 flex-shrink-0" />
                         {item}
                       </li>
                     ))}
@@ -158,12 +157,12 @@ export const ProductsSection = () => {
 
         {/* CTA */}
         <div className="text-center mt-12">
-          <Link to="/contact">
+          <a href="#contact">
             <Button variant="default" size="lg">
               Request Product Catalog
-              <ArrowRight className="w-5 h-5 ml-2" />
+              <ArrowRight className="w-5 h-5" />
             </Button>
-          </Link>
+          </a>
         </div>
       </div>
     </section>
